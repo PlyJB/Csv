@@ -79,7 +79,7 @@ Human Resources Department`,
 
         } else {
           console.log('Email sent: ' + info.response);
-          res.status(200).send('Email has been sent successfully!');
+          res.status(200).send(`Email has been sent successfully to ${email}!!`);
         }
       });
     console.log(`Form submitted by ${email} at ${Date.now()} `);
